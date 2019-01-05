@@ -17,3 +17,8 @@ export const flyingObjectsStarterPositions = [
 ];
 
 export const gameHeight = 1200;
+
+export const COLORS = {
+  PRIMARY: '#0b1730',
+  SECUNDARY: '#eae780'
+}

@@ -1,9 +1,9 @@
 import React from 'react';
-import { skyAndGroundWidth } from '../utils/constants';
+import { skyAndGroundWidth, COLORS } from '../utils/constants';
 
 const Ground = () => {
   const groundStyle = {
-    fill: '#59a941',
+    fill: COLORS.SECUNDARY,
   };
   const division = {
     stroke: '#458232',
