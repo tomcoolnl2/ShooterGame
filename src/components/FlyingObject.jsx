@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
-import FlyingObjectBase from './FlyingObjectBase';
-import FlyingObjectTop from './FlyingObjectTop';
-import { gameHeight } from '../utils/constants';
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled, { keyframes } from 'styled-components'
+import FlyingObjectBase from './FlyingObjectBase'
+import FlyingObjectTop from './FlyingObjectTop'
+import { gameHeight } from '../utils/constants'
 
 const moveVertically = keyframes`
   0% {
@@ -12,24 +12,24 @@ const moveVertically = keyframes`
   100% {
     transform: translateY(${gameHeight}px);
   }
-`;
+`
 
 const Move = styled.g`
-  animation: ${moveVertically} 4s linear;
-`;
+    animation: ${moveVertically} 4s linear;
+`
 
 const FlyingObject = props => (
-  <Move>
-    <FlyingObjectBase position={props.position} />
-    <FlyingObjectTop position={props.position} />
-  </Move>
-);
+    <Move>
+        <FlyingObjectBase position={props.position} />
+        <FlyingObjectTop position={props.position} />
+    </Move>
+)
 
 FlyingObject.propTypes = {
-  position: PropTypes.shape({
-    x: PropTypes.number.isRequired,
-    y: PropTypes.number.isRequired
-  }).isRequired,
-};
+    position: PropTypes.shape({
+        x: PropTypes.number.isRequired,
+        y: PropTypes.number.isRequired
+    }).isRequired
+}
 
-export default FlyingObject;
+export default FlyingObject
