@@ -1,7 +1,11 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
+
+import { fontFamily } from '../utils/constants'
 import Login from './Login'
 import Rank from './Rank'
+
 
 const Leaderboard = props => {
     const style = {
@@ -11,7 +15,7 @@ const Leaderboard = props => {
     }
 
     const leaderboardTitle = {
-        fontFamily: '"Joti One", cursive',
+        fontFamily,
         fontSize: 50,
         fill: '#88da85',
         cursor: 'default'

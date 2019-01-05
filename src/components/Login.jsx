@@ -1,5 +1,9 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
+
+import { fontFamily } from '../utils/constants'
+
 
 const Login = props => {
     const button = {
@@ -19,7 +23,7 @@ const Login = props => {
         x: 0, // center relative to X axis
         y: -440, // 440 up
         style: {
-            fontFamily: '"Joti One", cursive',
+            fontFamily,
             fontSize: 45,
             fill: '#e3e3e3',
             cursor: 'pointer'

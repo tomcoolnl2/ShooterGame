@@ -13,6 +13,8 @@ export const flyingObjectsStarterPositions = [-300, -150, 150, 300]
 
 export const gameHeight = 1200
 
+export const fontFamily = '"Montserrat", sans-serif'
+
 export const COLORS = {
     PRIMARY: '#0b1730',
     SECUNDARY: '#eae780'

@@ -1,9 +1,13 @@
+
 import React from 'react'
+
 import { pathFromBezierCurve } from '../utils/formulas'
+import { fontFamily } from '../utils/constants'
 
 const Title = () => {
+
     const textStyle = {
-        fontFamily: '"Joti One", cursive',
+        fontFamily,
         fontSize: 120,
         fill: '#cbca62'
     }

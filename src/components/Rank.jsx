@@ -1,5 +1,9 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
+
+import { fontFamily } from '../utils/constants'
+
 
 const Rank = props => {
     const { x, y } = props.position
@@ -13,7 +17,7 @@ const Rank = props => {
     }
 
     const textStyle = {
-        fontFamily: '"Joti One", cursive',
+        fontFamily,
         fontSize: 35,
         fill: '#e3e3e3',
         cursor: 'default'
