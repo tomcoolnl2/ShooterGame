@@ -1,9 +1,12 @@
+
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import { fontFamily } from '../utils/constants'
+
 const CurrentScore = props => {
     const scoreStyle = {
-        fontFamily: '"Joti One", cursive',
+        fontFamily,
         fontSize: 80,
         fill: '#d6d33e'
     }
