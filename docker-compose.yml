@@ -1,0 +1,9 @@
+web:
+  build: .
+  volumes:
+    - .:/usr/src/app:cached
+  environment:
+    - NODE_ENV=development
+    - CHOKIDAR_USEPOLLING=true
+  ports:
+    - 3000:3000
